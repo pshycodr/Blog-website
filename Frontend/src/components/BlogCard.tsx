@@ -59,7 +59,7 @@ export const BlogCard = ({
   };
 
   return (
-    <div className="w-full max-w-xl p-6 bg-white rounded-lg shadow-lg border border-gray-200 flex flex-col gap-5 sm:w-[600px] relative">
+    <div className=" max-w-xl w-screen p-6 bg-white rounded-lg shadow-lg border border-gray-200 flex flex-col gap-5 sm:w-[600px] relative">
       {loading && <Loader />}
       {isDraft && (
         <button
