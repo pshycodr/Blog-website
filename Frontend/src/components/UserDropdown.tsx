@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Avatar } from "./BlogCard";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
 
 const UserDropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const name = localStorage.getItem('name') || ""
 
