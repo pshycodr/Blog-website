@@ -57,31 +57,13 @@ const UserDropdown = () => {
                                 to="/my-blogs"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                             >
-                                Dashboard
+                                My Blogs
                             </Link>
                         </li>
-                        <li>
-                            <Link
-                                to="#"
-                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                            >
-                                Settings
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="#"
-                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                            >
-                                Earnings
-                            </Link>
-                        </li>
+                        
                     </ul>
                     <div className="py-2">
                         <button
-                            onClick={() => {
-                              
-                            }}
                             className="block w-full px-4 py-2 text-sm font-bold text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                         >
                             <ModalComponent />

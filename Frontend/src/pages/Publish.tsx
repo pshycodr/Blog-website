@@ -41,7 +41,7 @@ function Publish() {
         alert(isPublished ? "Blog published successfully!" : "Draft saved successfully!");
         setTitle("");
         setContent("");
-        navigate(isPublished ? "/blogs" : "/dashboard");
+        navigate(isPublished ? "/blogs" : "/my-blogs");
       } else {
         alert("Failed to process the request.");
       }
