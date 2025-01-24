@@ -169,7 +169,7 @@ function SignupForm({ type }: { type: "Signup" | "Signin" }) {
             <div className="text-slate-500 text-s">
                 <p>
                     Already have an account?{" "}
-                    <Link to={"/signin"} className="underline">
+                    <Link to={"/signin"} className="underline font-semibold text-indigo-600">
                         signin here
                     </Link>
                 </p>
