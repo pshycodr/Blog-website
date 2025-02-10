@@ -20,7 +20,6 @@ interface BlogsProps {
 
 const Blogs = () => {
 
-    console.log("Blogs.tsx");
 
     const navigate = useNavigate();
     const [blogs, setBlogs] = useState<BlogsProps[]>([]);

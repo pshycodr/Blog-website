@@ -9,15 +9,14 @@ import { useValidation } from "../hooks/useValidation";
 
 export const Signup = () => {
     return (
-        <div className="flex flex-col lg:flex-row min-h-screen">
-            {/* Quote Section */}
-            <div className="hidden lg:flex lg:w-1/2 items-center justify-center bg-gray-200 p-6">
+        <div className="grid grid-cols-2 h-screen">
+            <div className="hidden lg:block relative">
                 <Quote text="Let's Unleash your writing" />
             </div>
-
-            {/* Signup Section */}
-            <div className="flex flex-1 items-center justify-center bg-gray-100 p-6">
-                <SignupForm type="Signup" />
+            <div className="w-screen h-screen flex items-center justify-center bg-gray-100 lg:w-auto lg:h-auto">
+                <div>
+                    <SignupForm type="Signup" />
+                </div>
             </div>
         </div>
     );
@@ -77,7 +76,7 @@ function SignupForm({ type }: { type: "Signup" | "Signin" }) {
     };
 
     return (
-        <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
+        <div className="w-[400px] max-w-md bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold text-center mb-4">{type}</h2>
             <form onSubmit={onSubmitHandler} className="space-y-4">
                 <Input
